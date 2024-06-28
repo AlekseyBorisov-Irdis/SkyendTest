@@ -14,6 +14,7 @@
 		8AE119CB2C2E5143004B9618 /* IDKnowlegeDBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE119CA2C2E5143004B9618 /* IDKnowlegeDBTests.swift */; };
 		8AE119D52C2E5143004B9618 /* IDKnowlegeDBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE119D42C2E5143004B9618 /* IDKnowlegeDBUITests.swift */; };
 		8AE119D72C2E5143004B9618 /* IDKnowlegeDBUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE119D62C2E5143004B9618 /* IDKnowlegeDBUITestsLaunchTests.swift */; };
+		8AE119E82C2E5E86004B9618 /* LeetCodeEasy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE119E72C2E5E86004B9618 /* LeetCodeEasy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		8AE119D02C2E5143004B9618 /* IDKnowlegeDBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IDKnowlegeDBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AE119D42C2E5143004B9618 /* IDKnowlegeDBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDKnowlegeDBUITests.swift; sourceTree = "<group>"; };
 		8AE119D62C2E5143004B9618 /* IDKnowlegeDBUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDKnowlegeDBUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8AE119E72C2E5E86004B9618 /* LeetCodeEasy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeetCodeEasy.swift; path = IDKnowlegeDBTests/LeetcodeTests/LeetCodeEasy.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 		8AE119C92C2E5143004B9618 /* IDKnowlegeDBTests */ = {
 			isa = PBXGroup;
 			children = (
+				8AE119E42C2E5D81004B9618 /* LeetcodeTests */,
 				8AE119CA2C2E5143004B9618 /* IDKnowlegeDBTests.swift */,
 			);
 			path = IDKnowlegeDBTests;
@@ -125,6 +128,15 @@
 				8AE119D62C2E5143004B9618 /* IDKnowlegeDBUITestsLaunchTests.swift */,
 			);
 			path = IDKnowlegeDBUITests;
+			sourceTree = "<group>";
+		};
+		8AE119E42C2E5D81004B9618 /* LeetcodeTests */ = {
+			isa = PBXGroup;
+			children = (
+				8AE119E72C2E5E86004B9618 /* LeetCodeEasy.swift */,
+			);
+			name = LeetcodeTests;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AE119E82C2E5E86004B9618 /* LeetCodeEasy.swift in Sources */,
 				8AE119CB2C2E5143004B9618 /* IDKnowlegeDBTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
