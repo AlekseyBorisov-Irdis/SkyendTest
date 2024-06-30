@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8ACB26D52C309B6B0041F696 /* MemoryLayoutExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACB26D42C309B6B0041F696 /* MemoryLayoutExample.swift */; };
 		8AE119BA2C2E5142004B9618 /* IDKnowlegeDBApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE119B92C2E5142004B9618 /* IDKnowlegeDBApp.swift */; };
 		8AE119BC2C2E5142004B9618 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE119BB2C2E5142004B9618 /* ContentView.swift */; };
 		8AE119BE2C2E5143004B9618 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AE119BD2C2E5143004B9618 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8ACB26D42C309B6B0041F696 /* MemoryLayoutExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryLayoutExample.swift; sourceTree = "<group>"; };
 		8AE119B62C2E5142004B9618 /* IDKnowlegeDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IDKnowlegeDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AE119B92C2E5142004B9618 /* IDKnowlegeDBApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDKnowlegeDBApp.swift; sourceTree = "<group>"; };
 		8AE119BB2C2E5142004B9618 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +75,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8ACB26D32C309B2C0041F696 /* MemoryLayout */ = {
+			isa = PBXGroup;
+			children = (
+				8ACB26D42C309B6B0041F696 /* MemoryLayoutExample.swift */,
+			);
+			path = MemoryLayout;
+			sourceTree = "<group>";
+		};
 		8AE119AD2C2E5142004B9618 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +106,7 @@
 		8AE119B82C2E5142004B9618 /* IDKnowlegeDB */ = {
 			isa = PBXGroup;
 			children = (
+				8ACB26D32C309B2C0041F696 /* MemoryLayout */,
 				8AE119B92C2E5142004B9618 /* IDKnowlegeDBApp.swift */,
 				8AE119BB2C2E5142004B9618 /* ContentView.swift */,
 				8AE119BD2C2E5143004B9618 /* Assets.xcassets */,
@@ -153,6 +164,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				8ACB26D22C309AEA0041F696 /* PBXTargetDependency */,
 			);
 			name = IDKnowlegeDB;
 			productName = IDKnowlegeDB;
@@ -227,6 +239,9 @@
 				Base,
 			);
 			mainGroup = 8AE119AD2C2E5142004B9618;
+			packageReferences = (
+				8ACB26D02C309AE20041F696 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
+			);
 			productRefGroup = 8AE119B72C2E5142004B9618 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -270,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AE119BC2C2E5142004B9618 /* ContentView.swift in Sources */,
+				8ACB26D52C309B6B0041F696 /* MemoryLayoutExample.swift in Sources */,
 				8AE119BA2C2E5142004B9618 /* IDKnowlegeDBApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +311,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		8ACB26D22C309AEA0041F696 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 8ACB26D12C309AEA0041F696 /* SwiftLintBuildToolPlugin */;
+		};
 		8AE119C82C2E5143004B9618 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8AE119B52C2E5142004B9618 /* IDKnowlegeDB */;
@@ -601,6 +621,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8ACB26D02C309AE20041F696 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SimplyDanny/SwiftLintPlugins";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.55.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8ACB26D12C309AEA0041F696 /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8ACB26D02C309AE20041F696 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8AE119AE2C2E5142004B9618 /* Project object */;
 }
