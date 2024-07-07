@@ -92,7 +92,7 @@ final class CopyOnWrite: XCTestCase {
   }
 
   func testCoWOnCustomStructure() throws {
-    var contact = CoW_ContactStructure(name: "Ivan")
+    let contact = CoW_ContactStructure(name: "Ivan")
     var boxA = Box(contact)
     var boxB = boxA
     
