@@ -18,15 +18,14 @@ class ListNode {
 }
 
 final class LeetCodeEasy: XCTestCase {
-  
   override func setUpWithError() throws {
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+
   }
   
   override func tearDownWithError() throws {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+   
   }
-  
+
   func testLongestCommonPrefix() throws {
     let arr1 = ["flower","flow","flight"]
     let arr2 = ["dog","racecar","car"]
@@ -64,6 +63,22 @@ final class LeetCodeEasy: XCTestCase {
     }
   }
   
+  func testRemoveDuplicates() throws {
+    var arr1 = [1,1,2]
+    var arr2 = [0,0,1,1,1,2,2,3,3,4]
+    var arr3 = [Int]()
+    var arr4 = [1, 1]
+
+    XCTAssertEqual(removeDuplicates(&arr1), 2)
+    XCTAssertEqual(arr1, [1,2])
+    XCTAssertEqual(removeDuplicates(&arr2), 5)
+    XCTAssertEqual(arr2, [0,1,2,3,4])
+    XCTAssertEqual(removeDuplicates(&arr3), 0)
+    XCTAssertEqual(arr3, [Int]())
+    XCTAssertEqual(removeDuplicates(&arr4), 1)
+    XCTAssertEqual(arr4, [1])
+  }
+
   private func longestCommonPrefix(_ strs: [String]) -> String {
     guard let firstWord = strs.first else { return "" }
     var prefix = firstWord
@@ -116,5 +131,10 @@ final class LeetCodeEasy: XCTestCase {
     guard let node = listNode else { return "" }
 
     return String(node.val) + valuesSumString(of: node.next)
+  }
+
+  private func removeDuplicates(_ nums: inout [Int]) -> Int {
+    nums = Array(Set(nums)).sorted()
+    return nums.count
   }
 }

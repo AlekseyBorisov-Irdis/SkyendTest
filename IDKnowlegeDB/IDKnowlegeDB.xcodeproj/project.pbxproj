@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A88189B2C379F5500618F9A /* FirstOccurance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A88189A2C379F5500618F9A /* FirstOccurance.swift */; };
+		8A88189D2C37ADF900618F9A /* LeetcodeTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A88189C2C37ADF900618F9A /* LeetcodeTask.swift */; };
+		8A8818A32C3B128100618F9A /* CopyOnWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8818A22C3B128100618F9A /* CopyOnWrite.swift */; };
+		8A8818A52C3B13F600618F9A /* CoWDataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8818A42C3B13F600618F9A /* CoWDataModels.swift */; };
+		8A8818A92C3B14AD00618F9A /* Array+TestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8818A82C3B14AD00618F9A /* Array+TestUtils.swift */; };
+		8A8818AC2C3B16D600618F9A /* MemoryAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8818AB2C3B16D600618F9A /* MemoryAddress.swift */; };
 		8AE119BA2C2E5142004B9618 /* IDKnowlegeDBApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE119B92C2E5142004B9618 /* IDKnowlegeDBApp.swift */; };
 		8AE119BC2C2E5142004B9618 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE119BB2C2E5142004B9618 /* ContentView.swift */; };
 		8AE119BE2C2E5143004B9618 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AE119BD2C2E5143004B9618 /* Assets.xcassets */; };
@@ -35,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A88189A2C379F5500618F9A /* FirstOccurance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstOccurance.swift; sourceTree = "<group>"; };
+		8A88189C2C37ADF900618F9A /* LeetcodeTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LeetcodeTask.swift; path = IDKnowlegeDBTests/LeetcodeTests/LeetcodeTask.swift; sourceTree = SOURCE_ROOT; };
+		8A8818A22C3B128100618F9A /* CopyOnWrite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyOnWrite.swift; sourceTree = "<group>"; };
+		8A8818A42C3B13F600618F9A /* CoWDataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoWDataModels.swift; sourceTree = "<group>"; };
+		8A8818A82C3B14AD00618F9A /* Array+TestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+TestUtils.swift"; sourceTree = "<group>"; };
+		8A8818AB2C3B16D600618F9A /* MemoryAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryAddress.swift; sourceTree = "<group>"; };
 		8AE119B62C2E5142004B9618 /* IDKnowlegeDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IDKnowlegeDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AE119B92C2E5142004B9618 /* IDKnowlegeDBApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDKnowlegeDBApp.swift; sourceTree = "<group>"; };
 		8AE119BB2C2E5142004B9618 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +85,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A8818992C379F2800618F9A /* Easy */ = {
+			isa = PBXGroup;
+			children = (
+				8A88189A2C379F5500618F9A /* FirstOccurance.swift */,
+			);
+			path = Easy;
+			sourceTree = "<group>";
+		};
+		8A88189E2C37B51200618F9A /* TestSupport */ = {
+			isa = PBXGroup;
+			children = (
+				8A8818AA2C3B16C100618F9A /* Utils */,
+				8A8818A72C3B147F00618F9A /* Extensions */,
+				8A8818A62C3B13FB00618F9A /* Models */,
+			);
+			path = TestSupport;
+			sourceTree = "<group>";
+		};
+		8A8818A12C3B123400618F9A /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				8A8818A22C3B128100618F9A /* CopyOnWrite.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		8A8818A62C3B13FB00618F9A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8A8818A42C3B13F600618F9A /* CoWDataModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8A8818A72C3B147F00618F9A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8A8818A82C3B14AD00618F9A /* Array+TestUtils.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8A8818AA2C3B16C100618F9A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8A8818AB2C3B16D600618F9A /* MemoryAddress.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		8AE119AD2C2E5142004B9618 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +177,8 @@
 		8AE119C92C2E5143004B9618 /* IDKnowlegeDBTests */ = {
 			isa = PBXGroup;
 			children = (
+				8A8818A12C3B123400618F9A /* Swift */,
+				8A88189E2C37B51200618F9A /* TestSupport */,
 				8AE119E42C2E5D81004B9618 /* LeetcodeTests */,
 				8AE119CA2C2E5143004B9618 /* IDKnowlegeDBTests.swift */,
 			);
@@ -133,7 +197,9 @@
 		8AE119E42C2E5D81004B9618 /* LeetcodeTests */ = {
 			isa = PBXGroup;
 			children = (
+				8A8818992C379F2800618F9A /* Easy */,
 				8AE119E72C2E5E86004B9618 /* LeetCodeEasy.swift */,
+				8A88189C2C37ADF900618F9A /* LeetcodeTask.swift */,
 			);
 			name = LeetcodeTests;
 			path = "New Group";
@@ -227,6 +293,9 @@
 				Base,
 			);
 			mainGroup = 8AE119AD2C2E5142004B9618;
+			packageReferences = (
+				8A8818872C31E69900618F9A /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+			);
 			productRefGroup = 8AE119B72C2E5142004B9618 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -279,7 +348,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AE119E82C2E5E86004B9618 /* LeetCodeEasy.swift in Sources */,
+				8A8818A52C3B13F600618F9A /* CoWDataModels.swift in Sources */,
+				8A88189D2C37ADF900618F9A /* LeetcodeTask.swift in Sources */,
+				8A88189B2C379F5500618F9A /* FirstOccurance.swift in Sources */,
+				8A8818A32C3B128100618F9A /* CopyOnWrite.swift in Sources */,
+				8A8818AC2C3B16D600618F9A /* MemoryAddress.swift in Sources */,
 				8AE119CB2C2E5143004B9618 /* IDKnowlegeDBTests.swift in Sources */,
+				8A8818A92C3B14AD00618F9A /* Array+TestUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,6 +676,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8A8818872C31E69900618F9A /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 8AE119AE2C2E5142004B9618 /* Project object */;
 }
