@@ -51,6 +51,7 @@ final class FirstOccurance: LeetcodeTask {
       ),
     ]
   }
+  
   override func tearDownWithError() throws {
     testCases = nil
     try super.tearDownWithError()
