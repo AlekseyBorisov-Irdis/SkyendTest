@@ -16,6 +16,11 @@
 		8A8818AE2C3B2A9A00618F9A /* DynamicDispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8818AD2C3B2A9A00618F9A /* DynamicDispatch.swift */; };
 		8A8818B02C3B2AD600618F9A /* DynamicDispatchModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8818AF2C3B2AD600618F9A /* DynamicDispatchModels.swift */; };
 		8A8819012C3D36B000618F9A /* 35_SearchInsert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8819002C3D36B000618F9A /* 35_SearchInsert.swift */; };
+		8A8819062C41412E00618F9A /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8819052C41412E00618F9A /* LinkedList.swift */; };
+		8A8819092C4144A700618F9A /* IDDataStructures in Frameworks */ = {isa = PBXBuildFile; productRef = 8A8819082C4144A700618F9A /* IDDataStructures */; };
+		8A88191F2C4179CD00618F9A /* DDProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A88191E2C4179CD00618F9A /* DDProtocols.swift */; };
+		8A8819212C417AA900618F9A /* DDClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8819202C417AA900618F9A /* DDClasses.swift */; };
+		8A8819232C41AB9A00618F9A /* 1_TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8819222C41AB9A00618F9A /* 1_TwoSum.swift */; };
 		8ACB26D52C309B6B0041F696 /* MemoryLayoutExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACB26D42C309B6B0041F696 /* MemoryLayoutExample.swift */; };
 		8AE119BA2C2E5142004B9618 /* IDKnowlegeDBApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE119B92C2E5142004B9618 /* IDKnowlegeDBApp.swift */; };
 		8AE119BC2C2E5142004B9618 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE119BB2C2E5142004B9618 /* ContentView.swift */; };
@@ -54,6 +59,11 @@
 		8A8818AD2C3B2A9A00618F9A /* DynamicDispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicDispatch.swift; sourceTree = "<group>"; };
 		8A8818AF2C3B2AD600618F9A /* DynamicDispatchModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicDispatchModels.swift; sourceTree = "<group>"; };
 		8A8819002C3D36B000618F9A /* 35_SearchInsert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 35_SearchInsert.swift; sourceTree = "<group>"; };
+		8A8819032C413C9F00618F9A /* IDDataStructures */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = IDDataStructures; path = ../../../IDDataStructures; sourceTree = "<group>"; };
+		8A8819052C41412E00618F9A /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		8A88191E2C4179CD00618F9A /* DDProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDProtocols.swift; sourceTree = "<group>"; };
+		8A8819202C417AA900618F9A /* DDClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDClasses.swift; sourceTree = "<group>"; };
+		8A8819222C41AB9A00618F9A /* 1_TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1_TwoSum.swift; sourceTree = "<group>"; };
 		8ACB26D42C309B6B0041F696 /* MemoryLayoutExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryLayoutExample.swift; sourceTree = "<group>"; };
 		8AE119B62C2E5142004B9618 /* IDKnowlegeDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IDKnowlegeDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AE119B92C2E5142004B9618 /* IDKnowlegeDBApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDKnowlegeDBApp.swift; sourceTree = "<group>"; };
@@ -80,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A8819092C4144A700618F9A /* IDDataStructures in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +109,7 @@
 			children = (
 				8A88189A2C379F5500618F9A /* 28_FirstOccurance.swift */,
 				8A8819002C3D36B000618F9A /* 35_SearchInsert.swift */,
+				8A8819222C41AB9A00618F9A /* 1_TwoSum.swift */,
 			);
 			path = Easy;
 			sourceTree = "<group>";
@@ -124,8 +136,8 @@
 		8A8818A62C3B13FB00618F9A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8A88191D2C41799E00618F9A /* DinamycDispatch */,
 				8A8818A42C3B13F600618F9A /* CoWDataModels.swift */,
-				8A8818AF2C3B2AD600618F9A /* DynamicDispatchModels.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -146,6 +158,39 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		8A8819022C413C6300618F9A /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				8A8819032C413C9F00618F9A /* IDDataStructures */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		8A8819042C41411600618F9A /* DataStructures */ = {
+			isa = PBXGroup;
+			children = (
+				8A8819052C41412E00618F9A /* LinkedList.swift */,
+			);
+			path = DataStructures;
+			sourceTree = "<group>";
+		};
+		8A8819072C4144A700618F9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A88191D2C41799E00618F9A /* DinamycDispatch */ = {
+			isa = PBXGroup;
+			children = (
+				8A8818AF2C3B2AD600618F9A /* DynamicDispatchModels.swift */,
+				8A88191E2C4179CD00618F9A /* DDProtocols.swift */,
+				8A8819202C417AA900618F9A /* DDClasses.swift */,
+			);
+			path = DinamycDispatch;
+			sourceTree = "<group>";
+		};
 		8ACB26D32C309B2C0041F696 /* MemoryLayout */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,7 +205,9 @@
 				8AE119B82C2E5142004B9618 /* IDKnowlegeDB */,
 				8AE119C92C2E5143004B9618 /* IDKnowlegeDBTests */,
 				8AE119D32C2E5143004B9618 /* IDKnowlegeDBUITests */,
+				8A8819022C413C6300618F9A /* Packages */,
 				8AE119B72C2E5142004B9618 /* Products */,
+				8A8819072C4144A700618F9A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,6 +244,7 @@
 		8AE119C92C2E5143004B9618 /* IDKnowlegeDBTests */ = {
 			isa = PBXGroup;
 			children = (
+				8A8819042C41411600618F9A /* DataStructures */,
 				8A8818A12C3B123400618F9A /* Swift */,
 				8A88189E2C37B51200618F9A /* TestSupport */,
 				8AE119E42C2E5D81004B9618 /* LeetcodeTests */,
@@ -260,6 +308,9 @@
 				8AE119C82C2E5143004B9618 /* PBXTargetDependency */,
 			);
 			name = IDKnowlegeDBTests;
+			packageProductDependencies = (
+				8A8819082C4144A700618F9A /* IDDataStructures */,
+			);
 			productName = IDKnowlegeDBTests;
 			productReference = 8AE119C62C2E5143004B9618 /* IDKnowlegeDBTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -370,16 +421,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A88191F2C4179CD00618F9A /* DDProtocols.swift in Sources */,
 				8AE119E82C2E5E86004B9618 /* LeetCodeEasy.swift in Sources */,
 				8A8818B02C3B2AD600618F9A /* DynamicDispatchModels.swift in Sources */,
 				8A8818A52C3B13F600618F9A /* CoWDataModels.swift in Sources */,
 				8A88189D2C37ADF900618F9A /* LeetcodeTask.swift in Sources */,
 				8A8818AE2C3B2A9A00618F9A /* DynamicDispatch.swift in Sources */,
 				8A88189B2C379F5500618F9A /* 28_FirstOccurance.swift in Sources */,
+				8A8819062C41412E00618F9A /* LinkedList.swift in Sources */,
 				8A8818A32C3B128100618F9A /* CopyOnWrite.swift in Sources */,
+				8A8819232C41AB9A00618F9A /* 1_TwoSum.swift in Sources */,
 				8A8819012C3D36B000618F9A /* 35_SearchInsert.swift in Sources */,
 				8A8818AC2C3B16D600618F9A /* MemoryAddress.swift in Sources */,
 				8AE119CB2C2E5143004B9618 /* IDKnowlegeDBTests.swift in Sources */,
+				8A8819212C417AA900618F9A /* DDClasses.swift in Sources */,
 				8A8818A92C3B14AD00618F9A /* Array+TestUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -548,6 +603,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -577,6 +633,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -727,6 +784,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8A8819082C4144A700618F9A /* IDDataStructures */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = IDDataStructures;
+		};
 		8ACB26D12C309AEA0041F696 /* SwiftLintBuildToolPlugin */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8ACB26D02C309AE20041F696 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;

@@ -175,7 +175,7 @@ final class SearchInsert: LeetcodeTask {
   ) -> Int {
     var index = 0
     for (indice, elemento) in nums.enumerated() {
-        var aux = elemento
+        let aux = elemento
         if elemento == target {
             index = indice
         } else if aux < target {
