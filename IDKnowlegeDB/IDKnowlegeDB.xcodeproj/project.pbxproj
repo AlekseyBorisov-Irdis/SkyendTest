@@ -21,6 +21,7 @@
 		8A88191F2C4179CD00618F9A /* DDProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A88191E2C4179CD00618F9A /* DDProtocols.swift */; };
 		8A8819212C417AA900618F9A /* DDClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8819202C417AA900618F9A /* DDClasses.swift */; };
 		8A8819232C41AB9A00618F9A /* 1_TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8819222C41AB9A00618F9A /* 1_TwoSum.swift */; };
+		8A8819252C420C4800618F9A /* 9_PalindromeNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8819242C420C4800618F9A /* 9_PalindromeNumber.swift */; };
 		8ACB26D52C309B6B0041F696 /* MemoryLayoutExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACB26D42C309B6B0041F696 /* MemoryLayoutExample.swift */; };
 		8AE119BA2C2E5142004B9618 /* IDKnowlegeDBApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE119B92C2E5142004B9618 /* IDKnowlegeDBApp.swift */; };
 		8AE119BC2C2E5142004B9618 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE119BB2C2E5142004B9618 /* ContentView.swift */; };
@@ -64,6 +65,7 @@
 		8A88191E2C4179CD00618F9A /* DDProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDProtocols.swift; sourceTree = "<group>"; };
 		8A8819202C417AA900618F9A /* DDClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDClasses.swift; sourceTree = "<group>"; };
 		8A8819222C41AB9A00618F9A /* 1_TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1_TwoSum.swift; sourceTree = "<group>"; };
+		8A8819242C420C4800618F9A /* 9_PalindromeNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 9_PalindromeNumber.swift; sourceTree = "<group>"; };
 		8ACB26D42C309B6B0041F696 /* MemoryLayoutExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryLayoutExample.swift; sourceTree = "<group>"; };
 		8AE119B62C2E5142004B9618 /* IDKnowlegeDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IDKnowlegeDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AE119B92C2E5142004B9618 /* IDKnowlegeDBApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDKnowlegeDBApp.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				8A88189A2C379F5500618F9A /* 28_FirstOccurance.swift */,
 				8A8819002C3D36B000618F9A /* 35_SearchInsert.swift */,
 				8A8819222C41AB9A00618F9A /* 1_TwoSum.swift */,
+				8A8819242C420C4800618F9A /* 9_PalindromeNumber.swift */,
 			);
 			path = Easy;
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 				8AE119CB2C2E5143004B9618 /* IDKnowlegeDBTests.swift in Sources */,
 				8A8819212C417AA900618F9A /* DDClasses.swift in Sources */,
 				8A8818A92C3B14AD00618F9A /* Array+TestUtils.swift in Sources */,
+				8A8819252C420C4800618F9A /* 9_PalindromeNumber.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

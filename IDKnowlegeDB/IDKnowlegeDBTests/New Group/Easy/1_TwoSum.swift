@@ -142,7 +142,7 @@ final class TwoSum: LeetcodeTask {
   // O(n)
   private func bestTimeSolution(nums: [Int], target: Int) -> [Int] {
     var seen = [Int: Int]()
-    for (i, num) in nums.enumerated() {
+    for (i, _) in nums.enumerated() {
       let diff = target - nums[i]
       if let index = seen[diff] {
         return [index, i]
