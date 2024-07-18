@@ -26,14 +26,6 @@ final class LeetCodeEasy: XCTestCase {
    
   }
 
-  func testMergeTwoList() throws {
-    let list1 = ListNode(1, ListNode(2, ListNode(4, nil)))
-    let list2 = ListNode(1, ListNode(3, ListNode(4, nil)))
-
-    let result = mergeTwoLists(list1, list2)
-    XCTAssertEqual(valuesSumString(of: result), "112344")
-  }
-
   func testPerformanceExample() throws {
     // This is an example of a performance test case.
     self.measure {
@@ -55,28 +47,6 @@ final class LeetCodeEasy: XCTestCase {
     XCTAssertEqual(arr3, [Int]())
     XCTAssertEqual(removeDuplicates(&arr4), 1)
     XCTAssertEqual(arr4, [1])
-  }
-
-  private func mergeTwoLists(
-    _ list1: ListNode?,
-    _ list2: ListNode?
-  ) -> ListNode? {
-    if list1 == nil || list2 == nil {
-      return list1 == nil ? list2 : list1
-    }
-    if list1!.val <= list2!.val {
-      list1?.next = mergeTwoLists(list1?.next, list2)
-      return list1
-    } else {
-      list2?.next = mergeTwoLists(list1, list2?.next)
-      return list2
-    }
-  }
-
-  private func valuesSumString(of listNode: ListNode?) -> String {
-    guard let node = listNode else { return "" }
-
-    return String(node.val) + valuesSumString(of: node.next)
   }
 
   private func removeDuplicates(_ nums: inout [Int]) -> Int {

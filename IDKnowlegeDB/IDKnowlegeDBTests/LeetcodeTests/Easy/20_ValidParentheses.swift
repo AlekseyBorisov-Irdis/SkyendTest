@@ -139,7 +139,7 @@ final class ValidParentheses: LeetcodeTask {
     guard data.count % 2 == 0 || data.count > 1 else { return false }
 
     var stack = [Character]()
-    var dict: [Character: Character] = [")": "(", "}": "{", "]": "["]
+    let dict: [Character: Character] = [")": "(", "}": "{", "]": "["]
 
     for c in data {
       if !stack.isEmpty, dict.keys.contains(c), let pair = dict[c], pair == stack.last {
@@ -148,7 +148,6 @@ final class ValidParentheses: LeetcodeTask {
         stack.append(c)
       }
     }
-
 
     return stack.isEmpty
   }

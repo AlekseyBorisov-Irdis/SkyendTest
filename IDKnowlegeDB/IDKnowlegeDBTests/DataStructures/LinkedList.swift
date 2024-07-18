@@ -6,7 +6,6 @@
 //
 
 import XCTest
-import IDDataStructures
 
 final class LinkedList: XCTestCase {
   private var listInt: IDLinkedList<Int>!
