@@ -126,7 +126,7 @@ final class RomanToInteger: LeetcodeTask {
     }
   }
 
-  private func mySolution(data:  String) -> Int {
+  private func mySolution(data: String) -> Int {
     let romanNumbers: [Character: Int] = ["I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000]
     var previous: Character = Character(" ")
     var result = 0
@@ -148,7 +148,7 @@ final class RomanToInteger: LeetcodeTask {
     return result
   }
 
-  private func bestTimeSolution(data:  String) -> Int {
+  private func bestTimeSolution(data: String) -> Int {
     func romanToIntLetter(_ ch: Character) -> Int {
       if ch == "I"{ return 1 }
       else if ch == "V"{ return 5 }
@@ -175,7 +175,7 @@ final class RomanToInteger: LeetcodeTask {
     return result
   }
 
-  private func bestMemorySolution(data:  String) -> Int {
+  private func bestMemorySolution(data: String) -> Int {
     func weightOfCharactor(c: Character) -> Int{
       switch c {
         case "I":

@@ -25,20 +25,6 @@ final class LeetCodeEasy: XCTestCase {
   override func tearDownWithError() throws {
    
   }
-  
-  func testValidParentheses() throws {
-    let string1 = "sdfgfdg(dsfdsgfd{sdfdsfs[dsfdsfs]sdfsfbvb}sdfdvsvs)sdfsl;"
-    let string2 = "sd}()fdjskl"
-    let string3 = "(){}[]"
-    let string4 = "(){}[]{"
-    let string5 = "(){{}[]"
-
-    XCTAssertTrue(isValidParentheses(string1))
-    XCTAssertFalse(isValidParentheses(string2))
-    XCTAssertTrue(isValidParentheses(string3))
-    XCTAssertFalse(isValidParentheses(string4))
-    XCTAssertFalse(isValidParentheses(string5))
-  }
 
   func testMergeTwoList() throws {
     let list1 = ListNode(1, ListNode(2, ListNode(4, nil)))
@@ -69,27 +55,6 @@ final class LeetCodeEasy: XCTestCase {
     XCTAssertEqual(arr3, [Int]())
     XCTAssertEqual(removeDuplicates(&arr4), 1)
     XCTAssertEqual(arr4, [1])
-  }
-
-  private func isValidParentheses(_ string: String) -> Bool {
-    let available: [Character: Character] = ["(": ")", "{": "}", "[": "]"]
-    var validOrder = [Character]()
-    for char in string {
-      if available.values.contains(char) {
-        guard let lastOrder = validOrder.last else { return false }
-        guard char == lastOrder else { return false }
-        validOrder.removeLast()
-      }
-
-      if available.keys.contains(char) {
-        guard let closingChar = available[char] else {
-          continue
-        }
-        validOrder.append(closingChar)
-      }
-    }
-
-    return validOrder.isEmpty
   }
 
   private func mergeTwoLists(

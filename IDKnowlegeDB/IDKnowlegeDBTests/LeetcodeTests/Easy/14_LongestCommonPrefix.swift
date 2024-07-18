@@ -26,7 +26,7 @@
 
 import XCTest
 
-final class _4_LongestCommonPrefix: LeetcodeTask {
+final class LongestCommonPrefix: LeetcodeTask {
   struct TestCase {
     let data: [String]
     let result: String
@@ -98,7 +98,7 @@ final class _4_LongestCommonPrefix: LeetcodeTask {
     }
   }
 
-  private func mySolution(data:  [String]) -> String {
+  private func mySolution(data: [String]) -> String {
     guard let firstWord = data.first else { return "" }
     var prefix = firstWord
 
@@ -109,7 +109,7 @@ final class _4_LongestCommonPrefix: LeetcodeTask {
     return prefix
   }
 
-  private func bestTimeSolution(data:  [String]) -> String {
+  private func bestTimeSolution(data: [String]) -> String {
     guard let firstWord = data.first else { return "" }
     var prefix = firstWord
 
@@ -120,7 +120,7 @@ final class _4_LongestCommonPrefix: LeetcodeTask {
     return prefix
   }
 
-  private func bestMemorySolution(data:  [String]) -> String {
+  private func bestMemorySolution(data: [String]) -> String {
     var mutable = data
     var longest = mutable.removeFirst()
 
