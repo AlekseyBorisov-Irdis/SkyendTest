@@ -25,14 +25,6 @@ final class LeetCodeEasy: XCTestCase {
   override func tearDownWithError() throws {
    
   }
-
-  func testLongestCommonPrefix() throws {
-    let arr1 = ["flower","flow","flight"]
-    let arr2 = ["dog","racecar","car"]
-    
-    XCTAssertEqual(longestCommonPrefix(arr1), "fl")
-    XCTAssertEqual(longestCommonPrefix(arr2), "")
-  }
   
   func testValidParentheses() throws {
     let string1 = "sdfgfdg(dsfdsgfd{sdfdsfs[dsfdsfs]sdfsfbvb}sdfdvsvs)sdfsl;"
@@ -77,17 +69,6 @@ final class LeetCodeEasy: XCTestCase {
     XCTAssertEqual(arr3, [Int]())
     XCTAssertEqual(removeDuplicates(&arr4), 1)
     XCTAssertEqual(arr4, [1])
-  }
-
-  private func longestCommonPrefix(_ strs: [String]) -> String {
-    guard let firstWord = strs.first else { return "" }
-    var prefix = firstWord
-    
-    while strs.filter({ $0.hasPrefix(prefix) }).count != strs.count && !prefix.isEmpty {
-        prefix.removeLast()
-    }
-    
-    return prefix
   }
 
   private func isValidParentheses(_ string: String) -> Bool {

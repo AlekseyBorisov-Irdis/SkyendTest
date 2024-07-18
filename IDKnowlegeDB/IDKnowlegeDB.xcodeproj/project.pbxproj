@@ -17,6 +17,7 @@
 		8A8819092C4144A700618F9A /* IDDataStructures in Frameworks */ = {isa = PBXBuildFile; productRef = 8A8819082C4144A700618F9A /* IDDataStructures */; };
 		8A88191F2C4179CD00618F9A /* DDProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A88191E2C4179CD00618F9A /* DDProtocols.swift */; };
 		8A8819212C417AA900618F9A /* DDClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8819202C417AA900618F9A /* DDClasses.swift */; };
+		8AAE83B42C49296F00F00917 /* 14_LongestCommonPrefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAE83B32C49296F00F00917 /* 14_LongestCommonPrefix.swift */; };
 		8ACB26D52C309B6B0041F696 /* MemoryLayoutExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACB26D42C309B6B0041F696 /* MemoryLayoutExample.swift */; };
 		8AD97EE02C4215CB001E5AE6 /* 1_TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD97ED82C4215CB001E5AE6 /* 1_TwoSum.swift */; };
 		8AD97EE12C4215CB001E5AE6 /* 9_PalindromeNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD97ED92C4215CB001E5AE6 /* 9_PalindromeNumber.swift */; };
@@ -62,6 +63,7 @@
 		8A8819052C41412E00618F9A /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		8A88191E2C4179CD00618F9A /* DDProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDProtocols.swift; sourceTree = "<group>"; };
 		8A8819202C417AA900618F9A /* DDClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDClasses.swift; sourceTree = "<group>"; };
+		8AAE83B32C49296F00F00917 /* 14_LongestCommonPrefix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 14_LongestCommonPrefix.swift; sourceTree = "<group>"; };
 		8ACB26D42C309B6B0041F696 /* MemoryLayoutExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryLayoutExample.swift; sourceTree = "<group>"; };
 		8AD97ED82C4215CB001E5AE6 /* 1_TwoSum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 1_TwoSum.swift; sourceTree = "<group>"; };
 		8AD97ED92C4215CB001E5AE6 /* 9_PalindromeNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 9_PalindromeNumber.swift; sourceTree = "<group>"; };
@@ -198,9 +200,10 @@
 			children = (
 				8AD97ED82C4215CB001E5AE6 /* 1_TwoSum.swift */,
 				8AD97ED92C4215CB001E5AE6 /* 9_PalindromeNumber.swift */,
+				8AF02DBE2C48F4C800F1F884 /* 13_RomanToInteger.swift */,
+				8AAE83B32C49296F00F00917 /* 14_LongestCommonPrefix.swift */,
 				8AD97EDA2C4215CB001E5AE6 /* 28_FirstOccurance.swift */,
 				8AD97EDB2C4215CB001E5AE6 /* 35_SearchInsert.swift */,
-				8AF02DBE2C48F4C800F1F884 /* 13_RomanToInteger.swift */,
 			);
 			path = Easy;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				8AE119B22C2E5142004B9618 /* Sources */,
 				8AE119B32C2E5142004B9618 /* Frameworks */,
 				8AE119B42C2E5142004B9618 /* Resources */,
+				8AAE83B52C492BED00F00917 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -411,6 +415,26 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8AAE83B52C492BED00F00917 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ $# -gt 1 ]]\nthen\n    echo \"Not support\"\n    exit 1\nfi\n\n# If your .xcodeproj file doesn't live immediately under SRCROOT or has a different name change the line below\nDEFAULT_PROJECT_FILE_PATH=\"${SRCROOT}/${PROJECT_NAME}.xcodeproj/project.pbxproj\"\nPROJECT_FILE_PATH=${1:-\"$DEFAULT_PROJECT_FILE_PATH\"}\nTEMP_FILE_PATH=$(mktemp \"${TMPDIR:-/tmp}/xc.$$.XXXXXXXXXX\")\n\nif [[ ! -f $PROJECT_FILE_PATH ]]\nthen\n    echo \"Cannot read $PROJECT_FILE_PATH\"\n    exit 1\nfi\n\nsort_range() {\n    while read -r\n    do\n        printf \"%s\\n\" \"$REPLY\"\n        if [[ $REPLY =~ $1 ]]\n        then\n            declare -a buf\n            while read -r && [[ ! $REPLY =~ $2 ]]\n            do\n                buf+=(\"$REPLY\")\n            done\n            for line in \"${buf[@]}\"\n            do\n                printf \"%s\\n\" \"$line\"\n            done | sort -k $3,$3 # To use case-insensitive sort, add `-f` option to `sort` command\n            unset buf\n            printf \"%s\\n\" \"$REPLY\"\n        fi\n    done\n}\n\ncat $PROJECT_FILE_PATH | \\\nsort_range \"files = \\(\" \"\\);\" 3  | \\\n# Uncomment the line below if you want your project structure to be sorted\n# sort_range \"children = \\(\" \"\\);\" 3 | \\\ncat > $TEMP_FILE_PATH\n\n\nif (( $(diff -u \"$TEMP_FILE_PATH\" \"$PROJECT_FILE_PATH\" | wc -c) > 0 ))\nthen\n    mv -f \"$TEMP_FILE_PATH\" \"$PROJECT_FILE_PATH\"\nelse\n    rm \"$TEMP_FILE_PATH\"\nfi\n\nexit 0\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8AE119B22C2E5142004B9618 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -434,6 +458,7 @@
 				8A8818AE2C3B2A9A00618F9A /* DynamicDispatch.swift in Sources */,
 				8AD97EE52C4215CB001E5AE6 /* LeetcodeTask.swift in Sources */,
 				8A8819062C41412E00618F9A /* LinkedList.swift in Sources */,
+				8AAE83B42C49296F00F00917 /* 14_LongestCommonPrefix.swift in Sources */,
 				8A8818A32C3B128100618F9A /* CopyOnWrite.swift in Sources */,
 				8AD97EE02C4215CB001E5AE6 /* 1_TwoSum.swift in Sources */,
 				8AD97EE22C4215CB001E5AE6 /* 28_FirstOccurance.swift in Sources */,
