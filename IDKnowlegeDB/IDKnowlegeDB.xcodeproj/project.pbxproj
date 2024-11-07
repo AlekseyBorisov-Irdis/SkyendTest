@@ -13,6 +13,7 @@
 		8A7FC1942C497F60001D67E1 /* 58_LengthOfLastWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7FC1932C497F60001D67E1 /* 58_LengthOfLastWord.swift */; };
 		8A7FC1962C498CB3001D67E1 /* 66_PlusOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7FC1952C498CB3001D67E1 /* 66_PlusOne.swift */; };
 		8A85CF4C2CDA4467000A7F0B /* 67_AddBinary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A85CF4B2CDA4454000A7F0B /* 67_AddBinary.swift */; };
+		8A85CF4E2CDBDD8F000A7F0B /* 69_Sqrt(x).swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A85CF4D2CDBDD8F000A7F0B /* 69_Sqrt(x).swift */; };
 		8A8818A32C3B128100618F9A /* CopyOnWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8818A22C3B128100618F9A /* CopyOnWrite.swift */; };
 		8A8818A52C3B13F600618F9A /* CoWDataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8818A42C3B13F600618F9A /* CoWDataModels.swift */; };
 		8A8818A92C3B14AD00618F9A /* Array+TestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8818A82C3B14AD00618F9A /* Array+TestUtils.swift */; };
@@ -64,6 +65,7 @@
 		8A7FC1932C497F60001D67E1 /* 58_LengthOfLastWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 58_LengthOfLastWord.swift; sourceTree = "<group>"; };
 		8A7FC1952C498CB3001D67E1 /* 66_PlusOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 66_PlusOne.swift; sourceTree = "<group>"; };
 		8A85CF4B2CDA4454000A7F0B /* 67_AddBinary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 67_AddBinary.swift; sourceTree = "<group>"; };
+		8A85CF4D2CDBDD8F000A7F0B /* 69_Sqrt(x).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "69_Sqrt(x).swift"; sourceTree = "<group>"; };
 		8A8818A22C3B128100618F9A /* CopyOnWrite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyOnWrite.swift; sourceTree = "<group>"; };
 		8A8818A42C3B13F600618F9A /* CoWDataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoWDataModels.swift; sourceTree = "<group>"; };
 		8A8818A82C3B14AD00618F9A /* Array+TestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+TestUtils.swift"; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 				8A7FC1932C497F60001D67E1 /* 58_LengthOfLastWord.swift */,
 				8A7FC1952C498CB3001D67E1 /* 66_PlusOne.swift */,
 				8A85CF4B2CDA4454000A7F0B /* 67_AddBinary.swift */,
+				8A85CF4D2CDBDD8F000A7F0B /* 69_Sqrt(x).swift */,
 			);
 			path = Easy;
 			sourceTree = "<group>";
@@ -455,6 +458,7 @@
 				8AD97EE52C4215CB001E5AE6 /* LeetcodeTask.swift in Sources */,
 				8AAE83B42C49296F00F00917 /* 14_LongestCommonPrefix.swift in Sources */,
 				8A8818A32C3B128100618F9A /* CopyOnWrite.swift in Sources */,
+				8A85CF4E2CDBDD8F000A7F0B /* 69_Sqrt(x).swift in Sources */,
 				8AD97EE02C4215CB001E5AE6 /* 1_TwoSum.swift in Sources */,
 				8A7FC1942C497F60001D67E1 /* 58_LengthOfLastWord.swift in Sources */,
 				8AD97EE22C4215CB001E5AE6 /* 28_FirstOccurance.swift in Sources */,
