@@ -31,7 +31,7 @@ final class SearchInsert: LeetcodeTask {
     let resuslt: Int
   }
 
-  var testCases: [TestCase]!
+  private var testCases: [TestCase]!
   
   override func setUpWithError() throws {
     try super.setUpWithError()

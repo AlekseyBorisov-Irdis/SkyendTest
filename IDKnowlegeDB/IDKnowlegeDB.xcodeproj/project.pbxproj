@@ -42,6 +42,8 @@
 		8AF02DBF2C48F4C800F1F884 /* 13_RomanToInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF02DBE2C48F4C800F1F884 /* 13_RomanToInteger.swift */; };
 		8AF9EACC2CDCE60D00E871F2 /* 83_RemoveDuplicatesFromSortedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF9EACB2CDCE60D00E871F2 /* 83_RemoveDuplicatesFromSortedList.swift */; };
 		8AF9EACE2CE2350200E871F2 /* 88_MergeSortedArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF9EACD2CE2350200E871F2 /* 88_MergeSortedArray.swift */; };
+		8AF9EAD02CE8C7CE00E871F2 /* 94_BinaryTreeInorderTraversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF9EACF2CE8C7CE00E871F2 /* 94_BinaryTreeInorderTraversal.swift */; };
+		8AF9EAD22CE8CA4100E871F2 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF9EAD12CE8CA4100E871F2 /* TreeNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +102,8 @@
 		8AF02DBE2C48F4C800F1F884 /* 13_RomanToInteger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 13_RomanToInteger.swift; sourceTree = "<group>"; };
 		8AF9EACB2CDCE60D00E871F2 /* 83_RemoveDuplicatesFromSortedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 83_RemoveDuplicatesFromSortedList.swift; sourceTree = "<group>"; };
 		8AF9EACD2CE2350200E871F2 /* 88_MergeSortedArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 88_MergeSortedArray.swift; sourceTree = "<group>"; };
+		8AF9EACF2CE8C7CE00E871F2 /* 94_BinaryTreeInorderTraversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 94_BinaryTreeInorderTraversal.swift; sourceTree = "<group>"; };
+		8AF9EAD12CE8CA4100E871F2 /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +187,7 @@
 		8A8819042C41411600618F9A /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
+				8AF9EAD12CE8CA4100E871F2 /* TreeNode.swift */,
 			);
 			path = DataStructures;
 			sourceTree = "<group>";
@@ -232,6 +237,7 @@
 				8A85CF4F2CDCC160000A7F0B /* 70_ClimbingStairs.swift */,
 				8AF9EACB2CDCE60D00E871F2 /* 83_RemoveDuplicatesFromSortedList.swift */,
 				8AF9EACD2CE2350200E871F2 /* 88_MergeSortedArray.swift */,
+				8AF9EACF2CE8C7CE00E871F2 /* 94_BinaryTreeInorderTraversal.swift */,
 			);
 			path = Easy;
 			sourceTree = "<group>";
@@ -474,6 +480,8 @@
 				8AD97EE22C4215CB001E5AE6 /* 28_FirstOccurance.swift in Sources */,
 				8A85CF4C2CDA4467000A7F0B /* 67_AddBinary.swift in Sources */,
 				8A7FC1922C497BF7001D67E1 /* 27_RemoveElement.swift in Sources */,
+				8AF9EAD02CE8C7CE00E871F2 /* 94_BinaryTreeInorderTraversal.swift in Sources */,
+				8AF9EAD22CE8CA4100E871F2 /* TreeNode.swift in Sources */,
 				8A85CF502CDCC160000A7F0B /* 70_ClimbingStairs.swift in Sources */,
 				8A8818AC2C3B16D600618F9A /* MemoryAddress.swift in Sources */,
 				8AE119CB2C2E5143004B9618 /* IDKnowlegeDBTests.swift in Sources */,

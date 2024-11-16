@@ -36,7 +36,7 @@ final class PalindromeNumber: LeetcodeTask {
     let resuslt: Bool
   }
 
-  var testCases: [TestCase]!
+  private var testCases: [TestCase]!
 
   override func setUpWithError() throws {
     try super.setUpWithError()

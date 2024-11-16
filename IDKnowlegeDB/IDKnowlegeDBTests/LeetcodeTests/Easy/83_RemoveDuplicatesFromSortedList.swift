@@ -43,7 +43,7 @@ final class RemoveDuplicatesFromSortedList: LeetcodeTask {
     }
   }
 
-  var testCases: [TestCase]!
+  private var testCases: [TestCase]!
 
   struct TestCase {
     let head: ListNode

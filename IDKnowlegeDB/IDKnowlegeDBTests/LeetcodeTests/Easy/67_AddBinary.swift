@@ -37,7 +37,7 @@ final class AddBinaryTests: LeetcodeTask {
     let expected: String
   }
 
-  var testCases: [TestCase]!
+  private var testCases: [TestCase]!
 
   override func setUpWithError() throws {
     try super.setUpWithError()

@@ -32,7 +32,7 @@ final class SqrtX: LeetcodeTask {
     let expected: Int
   }
 
-  var testCases: [TestCase]!
+  private var testCases: [TestCase]!
 
   override func setUpWithError() throws {
     try super.setUpWithError()

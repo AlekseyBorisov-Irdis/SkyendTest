@@ -44,7 +44,7 @@ final class PlusOne: LeetcodeTask {
     let result: [Int]
   }
 
-  var testCases: [TestCase]!
+  private var testCases: [TestCase]!
 
   override func setUpWithError() throws {
     try super.setUpWithError()

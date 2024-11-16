@@ -32,7 +32,7 @@ final class LongestCommonPrefix: LeetcodeTask {
     let result: String
   }
 
-  var testCases: [TestCase]!
+  private var testCases: [TestCase]!
 
   override func setUpWithError() throws {
     try super.setUpWithError()

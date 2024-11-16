@@ -46,7 +46,7 @@ final class ValidParentheses: LeetcodeTask {
     let result: Bool
   }
 
-  var testCases: [TestCase]!
+  private var testCases: [TestCase]!
 
   override func setUpWithError() throws {
     try super.setUpWithError()

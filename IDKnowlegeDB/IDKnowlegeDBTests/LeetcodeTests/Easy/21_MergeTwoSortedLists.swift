@@ -45,7 +45,7 @@ final class MergeTwoSortedLists: LeetcodeTask {
     let result: ListNode?
   }
 
-  var testCases: [TestCase]!
+  private var testCases: [TestCase]!
 
   override func setUpWithError() throws {
     try super.setUpWithError()
